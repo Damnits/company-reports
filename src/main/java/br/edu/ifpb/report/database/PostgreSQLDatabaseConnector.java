@@ -1,13 +1,10 @@
 package br.edu.ifpb.report.database;
 
-public class PostgreSQLDatabaseConnector {
+public class PostgreSQLDatabaseConnector implements Connector {
 
     public void createConnection() {
-        System.out.println("Create postgres connetion");
+        System.out.println("Create postgres connection");
     }
-
-    public void runQuery(String query) {
-        System.out.println("Run SQL query");
-    }
+    public void executeQuery(String query) { System.out.println("Run SQL query"); }
 
 }
